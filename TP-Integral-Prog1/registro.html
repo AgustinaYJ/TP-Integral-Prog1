@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="González Agustina, Peralta Virginia">
+    <meta name="author" content="González Agustina, Peralta Virginia">
+    <link rel="icon" href="img/logocat.png">
+    <script src="https://kit.fontawesome.com/8101b2da38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Registro</title>
+</head>
+
+<body id="body-registro">
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <h1><a href="index.html">Meowtendo</a></h1>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="registro.html">Registro</a>
+                <a href="productos.html">Productos</a>
+                <a href="ranking.html">Ranking</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main-registro">
+        <div class="container-register">
+            <form action="#" method="post">
+                <h2>Regístrese aquí</h2>
+                <div class="content">
+                    <div class="input-box">
+                        <label for="idname">Nombre completo</label>
+                        <input type="text" placeholder="Ingrese nombre completo" name="name" id="idname" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="username">Usuario</label>
+                        <input type="text" placeholder="Ingrese usuario" name="uname" id="username" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="mail">Correo electrónico</label>
+                        <input type="email" placeholder="Ingrese correo válido" name="email" id="mail" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="iphone">Número de teléfono</label>
+                        <input type="tel" placeholder="Ingrese número telefónico" name="phone" id="iphone" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="pass">Contraseña</label>
+                        <input type="password" placeholder="Ingrese contraseña" name="password" id="pass" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="confirm-password">Confirmar contraseña</label>
+                        <input type="password" placeholder="Re-ingrese contraseña" name="confirmPassword"
+                            id="confirm-password" required>
+                    </div>
+                    <span class="gender-title">Género</span>
+                    <div class="gender-category">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Hombre</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Mujer</label>
+                        <input type="radio" name="gender" id="other">
+                        <label for="other">Miau?</label>
+                    </div>
+                    <div class="alert">
+                        <p>Al apretar 'Registrarse', aceptas nuestros <a href="#">Términos y Condiciones</a> y nuestra
+                            <a href="#">Política de Privacidad.</a>
+                        </p>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Registrarse</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a
+                    href="https://www.bing.com/maps?osid=bfbcd9ab-1077-4ff9-a45c-7b025db26013&cp=34.991648~135.760953&lvl=16&pi=0&v=2&sV=2&form=S00027"><i
+                        class="fa-solid fa-location-crosshairs"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="informacion.html">Ranking</a></li>
+                </ul>
+            </div>
+            <div class="footerbtn">
+                <p> Copyright &copy; 2024 - All rights reserved by <a href="#">Meowtendo Gaming</a> Designed By
+                    <span class="designer"> González, Agustina & Peralta, Virginia</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
