@@ -1,22 +1,24 @@
-
-*{ 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu Sans", sans-serif;
-    
+
 }
-body{
-    width: 100%;
-    height: 100%;
-    background-color: #1b1b1b;
-} 
-main{
+
+body {
     width: 100%;
     height: 100%;
     background-color: #1b1b1b;
 }
-.capa{
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #1b1b1b;
+}
+
+.capa {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -24,8 +26,9 @@ main{
     top: 0;
     left: 0;
 }
+
 /*Estilos para el encabezado*/
-.header{
+header {
     background-color: #161616;
     width: 100%;
     height: 100px;
@@ -33,51 +36,56 @@ main{
     z-index: 1000;
     top: 0;
     left: 0;
-    
+
 }
-.logo h1 a{
+
+.logo h1 a {
     text-decoration: none;
     color: white;
     border: solid 2px rgb(129, 0, 0);
 }
-.container{
+
+.container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
-.container .btn-menu, .logo{
+
+.container .logo {
     float: left;
-    line-height:100px;
+    line-height: 100px;
 
 }
-.container .btn-menu label{
+
+.container label {
     color: #fff;
     font-size: 25px;
     cursor: pointer;
 
 }
-.btn-menu i{
-    color: white;
-}
-.logo a{
+
+.logo a {
     background-color: rgb(168, 8, 8);
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
     padding: 5px;
 }
-.logo h1{
-    
+
+.logo h1 {
+
     color: #fff;
     font-weight: 400;
     font-size: 22px;
     margin-left: 10px;
 }
-.container .menu{
+
+.container .menu {
     float: right;
     line-height: 100px;
 }
-.container .menu a{
+
+.container .menu a {
     display: inline-block;
     padding: 15px;
     line-height: normal;
@@ -88,72 +96,16 @@ main{
     font-size: 15px;
     margin-right: 5px;
 }
-.container .menu a:hover{
+
+.container .menu a:hover {
     border-bottom: 2px solid #c7c7c7;
     padding-bottom: 5px;
 }
+
 /*Fin de Estilos para el encabezado*/
 
-/*Menù lateral*/
-#btn-menu{
-    display: none;
-}
-.container-menu{
-    position: fixed;
-    z-index: 1000;
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100vh;
-    top: 0;left: 0;
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
-}
-#btn-menu:checked ~ .container-menu{
-    opacity: 1;
-    visibility: visible;
-}
-.cont-menu{
-    width: 100%;
-    max-width: 250px;
-    background: #1c1c1c;
-    height: 100vh;
-    position: relative;
-    transition: all 500ms ease;
-    transform: translateX(-100%);
-}
-#btn-menu:checked ~ .container-menu .cont-menu{
-    transform: translateX(0%);
-}
-.cont-menu nav{
-    transform: translateY(15%);
-}
-.cont-menu nav a{
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 20px;
-    color: #c7c7c7;
-    border-left: 5px solid transparent;
-    transition: all 400ms ease;
-}
-.cont-menu nav a:hover{
-    border-left: 5px solid #c7c7c7;
-    background: #1f1f1f;
-}
-.cont-menu label{
-    position: absolute;
-    right: 5px;
-    top: 10px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 18px;
-}
-/*Fin de Menù lateral*/
-
-
 /* principal */
-.principal{
+.principal {
     text-align: center;
     color: white;
     padding: 2em;
@@ -163,17 +115,20 @@ main{
     flex-direction: column;
     align-items: center;
 }
-.principal h1{
+
+.principal h1 {
     padding: 2em;
     color: white;
 }
-.wrapper{
-    
+
+.wrapper {
     display: flex;
-    width: 70%;
+    width: 100%;
     justify-content: space-around;
+    gap: 20px;
 }
-.foto{
+
+.foto {
     width: 280px;
     height: 360px;
     padding: 2rem 1rem;
@@ -184,12 +139,12 @@ main{
     transition: 0.5s ease-in-out;
     border-radius: 20px;
 }
-.foto:hover{
 
+.foto:hover {
     border-radius: 20px;
 }
-.foto:before{
-    content: "";
+
+.foto:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -201,11 +156,13 @@ main{
     transition: 0.5s all;
     opacity: 0;
 }
-.foto:hover:before{
+
+.foto:hover:before {
     opacity: 1;
     border-radius: 20px;
 }
-.foto img{
+
+.foto img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -214,7 +171,8 @@ main{
     left: 0;
 
 }
-.foto .info{
+
+.foto .info {
     position: relative;
     z-index: 3;
     color: #fff;
@@ -223,20 +181,24 @@ main{
     transition: 0.5 all;
 
 }
-.foto:hover .info{
+
+.foto:hover .info {
     opacity: 1;
     transform: translate(0px);
 }
-.foto .info h1{
+
+.foto .info h1 {
     margin: 0;
 }
-.foto .info p{
+
+.foto .info p {
     letter-spacing: 1px;
     font-size: 15px;
     margin-top: 8px;
     margin-bottom: 20px;
 }
-.foto .info .boton{
+
+.foto .info .boton {
     text-decoration: none;
     padding: 0.5rem 1rem;
     background: #fff;
@@ -246,39 +208,41 @@ main{
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-.foto .info .boton:hover{
+
+.foto .info .boton:hover {
     box-shadow: 0px 7px 10px rgba(131, 9, 9, 0.644);
 }
-img{
+
+img {
     height: 370px;
     width: 240px;
     border-radius: 20px;
 }
 
 
- 
+
 /*gatooos*/
 
-.equipo{
+.equipo {
     padding: 1em;
 }
 
-.equipo h1{
-    
+.equipo h1 {
     text-align: center;
     color: white;
     text-transform: uppercase;
     margin: 10px;
     padding: 1em;
 }
-.gatos{
+
+.gatos {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 40px;   
+    gap: 40px;
 }
 
-.gatos .mascota{
+.gatos .mascota {
     margin-top: 15px;
     color: #e0e0e0;
     font-size: larger;
@@ -287,14 +251,14 @@ img{
     font-style: normal;
 }
 
-.gatos p{
+.gatos p {
     text-align: center;
     color: #e4e2dfb0;
-    font-style:italic;
+    font-style: italic;
     text-transform: capitalize;
 }
 
-.gatoft img{
+.gatoft img {
     width: 300px;
 }
 
@@ -302,40 +266,73 @@ img{
 
 /* PARTE NOTICIAS*/
 
-.noticias img{
+.noticias img {
     width: 100%;
     display: block;
 }
 
-.noticias h1{
+.noticias h1 {
     text-align: center;
     color: white;
     text-transform: uppercase;
     padding: 2em;
 }
+
 /* fin de noticias */
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.publi{
+    background-color: #17173bc0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.publi div{
+    width: 60%;
+}
+
+aside h4{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
 
 aside div{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+    align-items: center;
 }
-aside article{
+
+aside img{ 
     height: 30%;
 }
 
+
 /* FOOTER */
- footer{
+footer {
     background-color: #0a0909bd;
 }
-.footerContainer{
+
+.footerContainer {
     width: 100%;
     padding: 70px 30px 20px;
 }
-.icons{
+
+.icons {
     display: flex;
     justify-content: center;
 }
-.icons a{
+
+.icons a {
     text-decoration: none;
     padding: 10px;
     background-color: white;
@@ -343,30 +340,34 @@ aside article{
     border-radius: 50%;
 }
 
-.icons a i{
+.icons a i {
     font-size: 2em;
     color: black;
     opacity: 1.9;
-} 
+}
 
 /* KCHOVER EFFECTS */
-.icons a:hover{
+.icons a:hover {
     background-color: #0a0909bd;
     transition: 0.5s;
 }
-.icons a:hover i{
+
+.icons a:hover i {
     color: white;
     transition: 0.5s;
 }
-.footerNav{
+
+.footerNav {
     margin: 30px 0;
 }
-.footerNav ul{
+
+.footerNav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
-.footerNav ul li a{
+
+.footerNav ul li a {
     color: white;
     margin: 20px;
     text-decoration: none;
@@ -375,20 +376,22 @@ aside article{
     transform: 0.5s;
 }
 
-.footerNav ul li a:hover{
+.footerNav ul li a:hover {
     opacity: 1;
 }
 
-.footerbtn{
+.footerbtn {
     background-color: #080808;
     padding: 20px;
     width: 100%;
     text-align: center;
 }
-.footerbtn p{
+
+.footerbtn p {
     color: white;
 }
-.designer{
+
+.designer {
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -399,93 +402,93 @@ aside article{
 /* Fin de Footer */
 
 /*REGISTROOO*/
-#main-registro{
+#main-registro {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 1080px;
-    background-size: cover;
-    background-position: 0%;
     background-image: url(img/fondo.jpg);
-    
+    background-size: 100%;
+    background-position: center;
 }
-.container-register{
+
+.container-register {
     max-width: 650px;
     padding: 28px;
-    margin: 0 28px;
+    margin: 40px 28px;
     border-radius: 10px;
     overflow: hidden;
     background: rgba(48, 137, 196, 0.719);
     box-shadow: 0 15px 20px black;
 }
 
-.container-register h2{
+.container-register h2 {
     font-size: 26px;
     font-weight: bold;
-    text-align: left;            
+    text-align: left;
     color: #fff;
     padding-bottom: 8px;
     border-bottom: 1px solid rgb(219, 219, 219);
 }
 
-.content{
+.content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 20px 0;
 }
 
-.input-box{
+.input-box {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
     padding-bottom: 15px;
 }
-.checkbox{
+
+.checkbox {
     color: white;
 }
-.input-box:nth-child(2n){
-    justify-content: end;
-}
 
-.input-box label, .gender-title{
+
+.input-box label,
+.gender-title {
     width: 95%;
-    color:white;
+    color: white;
     font-weight: bold;
     margin: 5px 0;
 }
 
-.gender-title{
+.gender-title {
     font-size: 16px;
 }
 
-.input-box input{
+.input-box input {
     height: 40px;
     width: 95%;
     padding: 0 10px;
     border-radius: 5px;
-    border: 1px solid #68531b;
     outline: none;
 }
 
-.input-box input:is(:focus,:valid){
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+.input-box input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-.gender-category label{
+.gender-category label {
     padding: 0 20px 0 5px;
     font-size: 14px;
 }
 
-.gender-category{
+.gender-category {
     color: gainsboro;
 }
 
-.gender-category label, .gender-category input{
+.gender-category label,
+.gender-category input {
     cursor: pointer;
 }
 
-.alert p{
+.alert p {
     font-size: 14px;
     font-style: italic;
     color: rgba(233, 233, 233, 0.87);
@@ -494,84 +497,90 @@ aside article{
     line-height: 1.5;
 }
 
-.alert a{
+.alert a {
     font-weight: bold;
     text-decoration: none;
     color: rgb(235, 235, 235);
 }
 
-.alert a:hover{
+.alert a:hover {
     font-weight: bold;
     text-decoration: underline;
     /* color: rgb(41, 41, 41); */
     color: rgb(64, 64, 92)
 }
 
-.button-container{
+.button-container {
     margin: 15px 0;
 }
 
-.button-container button{
+.button-container button {
     width: 100%;
     margin-top: 10px;
     padding: 10px;
     display: block;
     font-size: 20px;
     color: white;
-    border: none;
     border-radius: 5px;
-    background-image: linear-gradient(to right, rgb(12, 14, 11), rgb(64, 64, 92)) ;
+    background-image: linear-gradient(to right, rgb(12, 14, 11), rgb(64, 64, 92));
     cursor: pointer;
     transition: 0.3s;
 }
 
-.button-container button:hover{
-    background-image: linear-gradient(to right, rgb(64, 64, 92), rgb(12, 14, 11)) ;
+.button-container button:hover {
+    background-image: linear-gradient(to right, rgb(64, 64, 92), rgb(12, 14, 11));
 }
 
 /*FIN REGISTROOO*/
 
 /*PRODUCTOS*/
 
-#productos1 h1{
+#productos1 h1 {
     color: white;
     text-align: center;
     margin-top: 40px;
     text-transform: uppercase;
     font-size: 40px;
 }
-.card-container{
+
+.card-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.card{
-    width:325px;
-    background-color:#fff;
+
+.card {
+    width: 325px;
+    background-color: #fff;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 20px;
-    border-radius: 20px ;
+    border-radius: 20px;
 }
-.card img{
+
+.card img {
     border-radius: 0 0;
     width: 100%;
-    height: 220px; 
+    height: 220px;
 }
+
 .card-content {
     padding: 16px;
 }
-.card-content h3{
-    font-size:28px;
+
+.card-content h3 {
+    font-size: 28px;
     margin-bottom: 8px;
 }
-.card-content p{
+
+.card-content p {
     color: #000000;
     font-size: 15px;
     margin-bottom: 8px;
     line-height: 1.3;
 }
-.card-content .btn{
+
+.card-content .btn {
     display: inline-block;
     padding: 8px 16px;
     background-color: #333;
@@ -584,12 +593,12 @@ aside article{
 
 
 /* Fin de Productos */
-.encuestas{
+.encuestas {
     height: 400px;
     margin-top: 0 auto;
 }
 
-.encuesta{
+.encuesta {
     background-color: rgba(100, 92, 92, 0.295);
     display: flex;
     justify-content: center;
@@ -599,7 +608,8 @@ aside article{
     padding: 2em;
     border-radius: 10px;
 }
-.encuestas h1{
+
+.encuestas h1 {
     text-align: center;
     margin-top: 40px;
     color: white;
@@ -607,14 +617,15 @@ aside article{
     font-size: 20px;
     padding: 1em;
 }
-#primera{
+
+#primera {
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.opn{
+.opn {
     text-align: center;
     font-size: larger;
     font-weight: bolder;
@@ -622,14 +633,14 @@ aside article{
 }
 
 
-#segunda{
+#segunda {
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-form button{
+form button {
     margin-top: 4px;
     padding: 5px 10px;
     text-transform: uppercase;
@@ -642,7 +653,7 @@ form button{
 
 /*Tablas ranking*/
 
-#tablero{
+#tablero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -650,12 +661,14 @@ form button{
 
 }
 
-#tablero h1, h2{
+#tablero h1,
+h2 {
     padding: 1em;
     color: white;
     text-transform: uppercase;
 }
-.tablas{
+
+.tablas {
     align-items: center;
     background: #2c2c2c;
     width: 80%;
@@ -664,7 +677,7 @@ form button{
     margin: 20px;
 }
 
-.tablas th{
+.tablas th {
     padding: 3px;
     color: #1b1b1b;
     text-transform: uppercase;
@@ -674,16 +687,15 @@ form button{
     border-radius: 3px;
 }
 
-.tablas td{
+.tablas td {
     color: #a19c9c;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.575);
 }
 
-.tablas td:hover{
+.tablas td:hover {
     background-color: #11101065;
-    
+
 }
+
 /* Fin de la tabla ranking */
-
-
